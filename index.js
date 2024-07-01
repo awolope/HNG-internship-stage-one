@@ -1,21 +1,35 @@
-function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
-  let day = date.getDay();
+let now = new Date();
+let h2 = document.querySelector("h2");
+let currentDate = document.querySelector("#currentdate");
+let date = now.getDate();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let year = now.getFullYear();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let day = days[now.getDay()];
+let months = [
+  "January",
+  "February",
+  "March",
+  "Aprik",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+let month = months[now.getMonth()];
 
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  let formattedDay = days[day];
-  return `${formattedDay} ${hours}:${minutes}`;
-}
-let currentDateELement = document.querySelector("#currentdate");
-let currentDate = new Date();
-currentDateELement.innerHTML = formatDate(currentDate);
+h2.innerHTML = `${hours} : ${minutes} `;
+currentDate.innerHTML = `${day} ${month} ${date}, ${year}`;

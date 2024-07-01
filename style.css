@@ -1,12 +1,19 @@
-.currentdetails {
-  font-size: 40px;
-  font-weight: bolder;
-  text-align: left;
+.timediv {
+  background-color: brown;
+  color: white;
+  border: 1px solid brown;
+  width: 200px;
+  border-radius: 30px;
+  padding: 15px;
+  margin-left: 370px;
+  margin-top: 70px;
 }
 .flexdiv {
   display: inline-flex;
   margin-top: 30px;
   background-color: #f8f9fa;
+  border-radius: 50px;
+  padding: 30px;
 }
 img {
   width: 350px;
@@ -15,7 +22,7 @@ img {
   margin-left: 200px;
 }
 h1 {
-  margin-top: 200px;
+  margin-top: 20px;
   color: brown;
 }
 .headerp {
@@ -27,4 +34,43 @@ h1 {
   line-height: 30px;
   font-size: 15px;
   margin-top: -15px;
+}
+a {
+  color: black;
+}
+.maindiv {
+  padding: 30px;
+  border-radius: 30px;
+  margin: 20px;
+}
+.fdiv {
+  display: inline-flex;
+}
+.footerdiv {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 400px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .flexdiv {
+    padding: 30px;
+    display: block;
+    margin: 10px;
+  }
+  .fdiv {
+    display: block;
+  }
+  img {
+    margin-left: 0px;
+    width: 300px;
+    margin: 10px;
+  }
+  .timediv {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
 }
