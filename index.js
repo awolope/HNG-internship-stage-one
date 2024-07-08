@@ -1,6 +1,6 @@
 let now = new Date();
-let h2 = document.querySelector("h2");
-let currentDate = document.querySelector("#currentdate");
+let h2 = document.querySelector('[data-testid="currentTimeUTC"]');
+let currentDate = document.querySelector('[data-testid="currentDay"]');
 let date = now.getDate();
 let hours = now.getHours();
 let minutes = now.getMinutes();

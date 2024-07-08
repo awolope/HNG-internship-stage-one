@@ -8,12 +8,16 @@
   </head>
   <body>
     <div class="flexdiv">
-      <img src="/assets/images/peculiar.HEIC" alt="" />
+      <img
+        src="/assets/images/peculiar.HEIC"
+        alt=""
+        data-testid="slackProfilePicture"
+      />
 
       <div>
         <div class="timediv">
-          <p id="currentdate"></p>
-          <h2>time</h2>
+          <div data-testid="currentTimeUTC">2024-07-07T12:00:00Z</div>
+          <div data-testid="currentDay">2024-07-07T12:00:00Z</div>
         </div>
         <h1>
           Awolope Feranmi Esther - Frontend <br />
@@ -81,17 +85,23 @@
     <div class="footerdiv">
       <footer>
         <h4>Contact Me</h4>
-        <p>
+        <p data-testid="Slack-email">
           Email:
           <a href="mailto:feranmi0804@gmail.com"> feranmi0804@gmail.com</a>
-          <br />
-          Slack display name: Ennygirle
-          <br />
-          Portfolio:
-          <a href="https://elegant-semifreddo-cb0752.netlify.app"
-            >Awolope Feranmi Esther portfolio</a
-          >
-          <br />
+        </p>
+        <p data-testid="slack-displayName">Slack display name: Ennygirle</p>
+        <br />
+        Portfolio:
+        <a
+          href="https://elegant-semifreddo-cb0752.netlify.app"
+          data-testid="scrapeanyweblink"
+          >Awolope Feranmi Esther portfolio</a
+        >
+        <br />
+        <p data-testid="Keywordlink">
+          HNG link: <a href=" http://hng.tech/learn.Attribute">click here</a>
+        </p>
+        <p data-testid="HNGlink">
           HNG link: <a href=" http://hng.tech/learn.Attribute">click here</a>
         </p>
       </footer>
